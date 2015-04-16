@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+  <meta charset = "utf-8">
+  <link href="js/c3.css" rel="stylesheet" type="text/css">
+</head>
+<body ng-controller="GraphCtrl" ng-init="showGraph()">
+  <h1>Activity</h1>
+  <input type="date" ng-model="currentDay">
+  <button ng-click="dayRatio()">Day Ratio</button>
+  <button ng-click="fourteen()">14 Days</button>
+  <div id="chart"></div>
+
+  <!-- Load the javascript libraries -->
+  <script src="js/d3.js" charset="utf-8"></script>
+  <script src="js/c3.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.csv-0.71.js"></script>
+  <script src="js/angular.js"></script>
+  <script src="js/myApp.js"></script>
+
+</body>
+</html>
